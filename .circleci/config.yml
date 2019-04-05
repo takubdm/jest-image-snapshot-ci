@@ -26,10 +26,10 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: apt-get upgrade
+      - run: sudo apt-get upgrade
       - run: 
           name: install
-          command: apt-get install -y \
+          command: sudo apt-get install -y \
             gconf-service \
             libasound2 \
             libatk1.0-0 \
